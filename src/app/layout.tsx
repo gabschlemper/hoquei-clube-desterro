@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Oswald } from "next/font/google";
+import { Oswald, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";
 
-const oswald = Oswald({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>
+      <body className={`${oswald.variable} ${roboto.variable}`}>
         <Header />
         {children}
       </body>

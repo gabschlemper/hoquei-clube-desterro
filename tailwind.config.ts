@@ -18,7 +18,7 @@ const config: Config = {
         secondary: {
           100: "#D3D3D3",
           200: "#C0C0C0",
-          300: "#ACACAC"
+          300: "#ACACAC",
         },
       },
     },

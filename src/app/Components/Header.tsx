@@ -3,33 +3,7 @@ import Image from "next/image";
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
 import Link from "next/link";
-
-const navItems = [
-  {
-    title: "Home",
-    url: "/",
-  },
-  {
-    title: "História do Clube",
-    url: "/historia",
-  },
-  {
-    title: "Projetos",
-    url: "/projetos",
-  },
-  {
-    title: "Calendário",
-    url: "/calendario",
-  },
-  {
-    title: "Transparência",
-    url: "/transparencia",
-  },
-  {
-    title: "Galeria de Fotos",
-    url: "/fotos",
-  },
-];
+import { navItems } from "@/data/navItems";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
