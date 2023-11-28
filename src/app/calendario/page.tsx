@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Calendário Esportivo",
+  description:
+    "Explore nosso calendário esportivo e mergulhe em um mundo de competições emocionantes. De grandes torneios a eventos especializados, mantenha-se atualizado com as datas que marcarão o ano esportivo",
+};
+
 export default function Calendario() {
   return (
     <main className="h-screen">

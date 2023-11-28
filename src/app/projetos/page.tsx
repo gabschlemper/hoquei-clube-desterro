@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Projetos para o Bem: Conheça Nossas Iniciativas Sociais de Mudança",
+  description:
+    "Faça parte da mudança positiva! Conheça nossos projetos sociais que abordam questões importantes e criam impacto real. Saiba como você pode se envolver e contribuir para um mundo melhor.",
+};
 
 export default function Projetos() {
   return (
