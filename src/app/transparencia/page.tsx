@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Transparência",
+  title: "Transparência | Hóquei Clube Desterro",
   description:
     "Explore nossa página de transparência para entender como operamos, tomamos decisões e mantemos nossos compromissos. Estamos comprometidos em fornecer informações claras e acessíveis aos nossos usuários",
 };

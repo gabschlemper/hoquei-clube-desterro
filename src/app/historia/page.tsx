@@ -1,8 +1,8 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title:
-    "Construindo História, Inspirando Futuro: Descubra a Trajetória do Nosso Clube.",
+  title: "Nossa história | Hóquei Clube Desterro",
   description:
     "Nossa história é mais do que uma linha do tempo; é uma fonte de inspiração para o futuro. Descubra como construímos nossa história, inspirando gerações e deixando um impacto duradouro.",
 };
@@ -15,6 +15,9 @@ export default function História() {
           Nossa História
         </h2>
       </header>
+      <div className="flex items-center justify-center animate-pulse">
+        <Image src="/coming.svg" width={600} height={600} alt="" />
+      </div>
     </main>
   );
 }

@@ -16,15 +16,19 @@ export default function Home() {
 
   return (
     <div className="">
-      <header className="px-4 lg:px-10 py-20 md:py-40 bg-[url('/background-home.jpg')] bg-no-repeat bg-cover h-screen ">
-        <h2 className="text-6xl md:text-8xl uppercase max-w-5xl font-bold">
+      <header className="px-4 lg:px-10 py-20 md:py-40 bg-[url('/background-home.jpg')] bg-no-repeat bg-cover h-screen flex flex-col items-start">
+        <h2 className="text-6xl md:text-8xl uppercase max-w-5xl font-bold mb-10">
           Junte-se a família{" "}
-          <span className={textWithPrimaryColor}>desterro</span> e faça história
-          no hóquei sobre a grama!
+          <span className={`${textWithPrimaryColor}`}>desterro</span> e faça
+          história no hóquei sobre a grama!
         </h2>
-        <button className={`${buttonStyle} mt-10`}>
+        <a
+          className={`${buttonStyle}`}
+          href="https://api.whatsapp.com/send/?phone=554899466555"
+          target="_blank"
+        >
           Vem jogar com a gente!
-        </button>
+        </a>
       </header>
 
       <div className="px-4 lg:px-10 py-20 md:py-40 flex flex-col md:flex-row gap-20 md:gap-0 items-center justify-between">
@@ -44,7 +48,7 @@ export default function Home() {
             ética esportiva solidifica sua posição como referência no hóquei
             sobre a grama na região.
           </p>
-          <div className="mt-12">
+          <div className=" flex">
             <Link href="/historia" className={`${buttonStyle}`}>
               Conheça nossa história
             </Link>
@@ -57,13 +61,13 @@ export default function Home() {
 
       <div className="px-4 lg:px-10 py-20 md:pb-40 flex flex-col md:items-center ">
         <h3 className="text-4xl md:text-6xl text-primary-200 font-bold uppercase md:m-auto">
-          Nossos Títulos  
+          Nossos Títulos
         </h3>
 
         <TitulosList titulos={titulos} />
       </div>
 
-      <div className="px-4 lg:px-10 py-20 md:py-40 bg-[url('/field-hockey.png')] bg-no-repeat bg-cover">
+      <div className="px-4 lg:px-10 py-20 md:py-40 bg-[url('/field-hockey.png')] bg-no-repeat bg-cover flex flex-col items-center">
         <p
           className={`uppercase text-center font-bold max-w-6xl m-auto text-2xl md:text-4xl leading-tight ${oswald.className}`}
         >
@@ -84,9 +88,13 @@ export default function Home() {
           Trabalho em equipe, perseverança, esportividade - essas são as
           características do Hóquei Clube Desterro.
         </p>
-        <button className={`${buttonStyle} m-auto block`}>
+        <a
+          className={`${buttonStyle}`}
+          href="https://api.whatsapp.com/send/?phone=554899466555"
+          target="_blank"
+        >
           Entre em contato
-        </button>
+        </a>
       </div>
     </div>
   );

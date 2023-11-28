@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Imagens que Contam Histórias: Navegue Pela Nossa Galeria Fotográfica",
+  title: "Galeria de Fotos | Hóquei Clube Desterro",
   description:
     "Em nossa galeria de fotos, cada imagem conta uma história única. Explore momentos cativantes capturados para proporcionar uma visão visual envolvente de nossa jornada e realizações.",
 };
