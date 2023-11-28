@@ -1,55 +1,5 @@
+import { galleryData } from "@/data/gallery";
 import Image from "next/image";
-
-export const teamData = [
-  {
-    img: "/gallery1.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery2.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery3.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery4.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery5.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery6.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery7.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery8.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery9.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery10.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery11.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-  {
-    img: "/gallery12.jpg",
-    alt: "Hóquei Clube Desterro",
-  },
-];
 
 export default function Fotos() {
   return (
@@ -60,7 +10,7 @@ export default function Fotos() {
         </h2>
       </header>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 m-auto">
-        {teamData.map((item, idx) => (
+        {galleryData.map((item, idx) => (
           <div key={idx} className="rounded-lg shadow-xl">
             <Image
               src={item.img}
