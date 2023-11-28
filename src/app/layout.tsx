@@ -3,6 +3,7 @@ import { Oswald, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 const roboto = Roboto({
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={`${oswald.variable} ${roboto.variable}`}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
