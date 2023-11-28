@@ -16,7 +16,7 @@
 
 body {
   color: theme(colors.secondary.100);
-  background: theme("colors.black");
+  background: #121213;
   -webkit-font-smoothing: antialiased;
 }
 

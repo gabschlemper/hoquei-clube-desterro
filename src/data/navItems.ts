@@ -1,5 +1,3 @@
-
-
 export const navItems = [
   {
     title: "Home",
